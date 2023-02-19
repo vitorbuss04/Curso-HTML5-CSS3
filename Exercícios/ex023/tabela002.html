@@ -1,203 +1,166 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabelas</title>
-</head>
-
-<style>
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-table {
-    width: 500px;
-    border-collapse: collapse;
-}
-
-td, th {
-    border: 1px solid black;
-    padding: 10px;
-}
-
-thead, tfoot {
-    background-color: gray;
-    color: white;
-}
-
-.numero {
-    text-align: right;
-}
-
-</style>
-
-<body>
-    <h1>Uso de tabelas grandes</h1>
-    <!--
-        Anatomia para tabelas grandes
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabelas Grandes</title>
+    <!-- Anatomina para teblas grandes 
         TABLE
             THEAD
-                TR, TD, TH
-            TBODY
-                TR, TD, TH
+                tr, td, th
+            TDOBY
+                tr, td, th
             TFOOT
-                TR, TD, TH
+                tr, td, th
     -->
+
+    <style>
+      body {
+        font-family: "Eurostile", sans-serif;
+    }
+    
+    table {
+        border-collapse: collapse;
+        width: 400px;
+    }
+    td , th{
+        border: 1px solid black;
+        padding: 8px;
+        font-weight: normal;
+    }
+    
+    thead {
+        background-color: darkgray;
+      }
+
+    .estado {
+        text-align: left;
+    }
+
+    .populacao {
+        text-align: right;
+    }
+
+    </style>
+  </head>
+  <body>
     <table>
-        <thead>
-            <th>Estado</th>
-            <th>População</th>
-        </thead>
-
-        <tbody>
-
+      <thead>
+        <th>Estado</th>
+        <th>População</th>
+      </thead>
+      <tbody>
+        <tr>
+            <td class="estado">São Paulo</td>
+            <td class="populacao">41 262 199</td>
+        </tr>
+        <tr>
+            <td class="estado">Minas Gerais</td>
+            <td class="populacao">19 597 330</td>
+        </tr>
+        <tr>
+            <td class="estado">Rio de Janeiro</td>
+            <td class="populacao">15 989 929</td>
+        </tr>
+        <tr>
+            <td class="estado">Bahia</td>
+            <td class="populacao">14 016 906</td>
+        </tr>
+        <tr>
+            <td class="estado">Paraná</td>
+            <td class="populacao">10 444 526</td>
+        </tr>
+        <tr>
+            <td class="estado">Rio Grande do Sul</td>
+            <td class="populacao">10 693 929</td>
+        </tr>
+        <tr>
+            <td class="estado">Pernambuco</td>
+            <td class="populacao">8 796 448</td>
+        </tr>
+        <tr>
+            <td class="estado">Ceará</td>
+            <td class="populacao">8 452 381</td>
+        </tr>
+        <tr>
+            <td class="estado">Pará</td>
+            <td class="populacao">7 581 051</td>
+        </tr>
+        <tr>
             <tr>
-                <td>São Paulo</td>
-                <td class="numero">46 649 132</td>
+                <td class="estado">Maranhão</td>
+                <td class="populacao">6 574 789</td>
             </tr>
-
-            <tr>
-                <td>Minas Gerais</td>
-                <td class="numero">21 411 923</td>
-            </tr>
-
-            <tr>
-                <td>Rio de Janeiro</td>
-                <td class="numero">17 463 349</td>
-            </tr>
-
-            <tr>
-                <td>Bahia</td>
-                <td class="numero">14 985 284</td>
-            </tr>
-
-            <tr>
-                <td>Paraná</td>
-                <td class="numero">11 597 484</td>
-            </tr>
-                
-            <tr>
-                <td>Rio Grande do Sul</td>
-                <td class="numero">11 466 630</td>
-            </tr>
-                
-            <tr>
-                <td>Pernambuco</td>
-                <td class="numero">9 674 793</td>
-            </tr>
-
-            <tr>
-                <td>Ceará</td>
-                <td class="numero">9 240 580</td>
-            </tr>
-
-            <tr>
-                <td>Pará</td>
-                <td class="numero">8 777 124</td>
-            </tr>
-
-            <tr>
-                <td>Santa Catarina</td>
-                <td class="numero">7 338 473</td>
-            </tr>
-
-            <tr>
-                <td>Goiás</td>
-                <td class="numero">7 206 589</td>
-            </tr>
-
-            <tr>
-                <td>Maranhão</td>
-                <td class="numero">7 153 262</td>
-            </tr>
-
-            <tr>
-                <td>Amazonas</td>
-                <td class="numero">4 269 995</td>
-            </tr>
-
-            <tr>
-                <td>Espírito Santo</td>
-                <td class="numero">4 108 508</td>
-            </tr>
-
-            <tr>
-                <td>Paraíba</td>
-                <td class="numero">4 059 905</td>
-            </tr>
-
-            <tr>
-                <td>Mato Grosso</td>
-                <td class="numero">3 567 234</td>
-            </tr>
-
-            <tr>
-                <td>Rio Grande do Norte</td>
-                <td class="numero">3 560 903</td>
-            </tr>
-
-            <tr>
-                <td>Alagoas</td>
-                <td class="numero">3 365 351</td>
-            </tr>
-
-            <tr>
-                <td>Piauí</td>
-                <td class="numero">3 289 290</td>
-            </tr>
-
-            <tr>
-                <td>Distrito Federal</td>
-                <td class="numero">3 094 325</td>
-            </tr>
-
-            <tr>
-                <td>Mato Grosso do Sul</td>
-                <td class="numero">2 839 188</td>
-            </tr>
-
-            <tr>
-                <td>Sergipe</td>
-                <td class="numero">2 338 474</td>
-            </tr>
-
-            <tr>
-                <td>Rondônia</td>
-                <td class="numero">1 815 278</td>
-            </tr>
-
-            <tr>
-                <td>Tocantins</td>
-                <td class="numero">1 607 363</td>
-            </tr>
-
-            <tr>
-                <td>Acre</td>
-                <td class="numero">906 876</td>
-            </tr>
-
-            <tr>
-                <td>Amapá</td>
-                <td class="numero">877 613</td>
-            </tr>
-
-            <tr>
-                <td>Roraima</td>
-                <td class="numero">652 713</td>
-            </tr>
-
-        </tbody>
-
-        <tfoot>
-            <tr>
-                <th>Total de habitantes</th>
-                <td class="numero"><strong>213.317.639</strong></td>
-            </tr>
-        </tfoot>
+            <td class="estado">Santa Catarina</td>
+            <td class="populacao">6 248 436</td>
+        </tr>
+        <tr>
+            <td class="estado">Goiás</td>
+            <td class="populacao">6 003 788</td>
+        </tr>
+        <tr>
+            <td class="estado">Espírito Santo</td>
+            <td class="populacao">3 514 952</td>
+        </tr>
+        <tr>
+            <td class="estado">Paraíba</td>
+            <td class="populacao">3 766 528</td>
+        </tr>
+        <tr>
+            <td class="estado">Amazonas</td>
+            <td class="populacao">3 483 985</td>
+        </tr>
+        <tr>
+            <td class="estado">Mato Grosso</td>
+            <td class="populacao">3 035 122</td>
+        </tr>
+        <tr>
+            <td class="estado">Rio Grande do Norte</td>
+            <td class="populacao">3 168 027</td>
+        </tr>
+        <tr>
+            <td class="estado">Piauí</td>
+            <td class="populacao">3 118 360</td>
+        </tr>
+        <tr>
+            <td class="estado">Alagoas</td>
+            <td class="populacao">3 120 494</td>
+        </tr>
+        <tr>
+            <td class="estado">Distrito Federal</td>
+            <td class="populacao">2,923,369</td>
+        </tr>
+        <tr>
+            <td class="estado">Mato Grosso do Sul</td>
+            <td class="populacao">2 449 024</td>
+        </tr>
+        <tr>
+            <td class="estado">Sergipe</td>
+            <td class="populacao">2 068 017</td>
+        </tr>
+        <tr>
+            <td class="estado">Rondônia</td>
+            <td class="populacao">1 562 409</td>
+        </tr>
+        <tr>
+            <td class="estado">Tocantins</td>
+            <td class="populacao">1 383 445</td>
+        </tr>
+        <tr>
+            <td class="estado">Acre</td>
+            <td class="populacao">733 559</td>
+        </tr>
+        <tr>
+            <td class="estado">Amapá</td>
+            <td class="populacao">669 526</td>
+        </tr>
+        <tr>
+            <td class="estado">Roraima</td>
+            <td class="populacao">450 479</td>
+        </tr>
+      </tbody>
+      <tfoot></tfoot>
     </table>
-</body>
+  </body>
 </html>
