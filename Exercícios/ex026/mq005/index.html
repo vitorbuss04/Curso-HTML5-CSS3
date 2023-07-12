@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <title>Menu Responsivo</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa accusamus necessitatibus quas earum quia labore doloremque. Officiis rem sequi voluptatibus pariatur fuga est velit alias, id perspiciatis vitae nulla obcaecati?
+            Qui quod porro fugit ex saepe ipsam iste sapiente! Numquam, autem labore dolore placeat error dicta ipsam minus molestiae perspiciatis iste adipisci magni dolor ex eum nulla sint deserunt iusto?</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores quaerat repudiandae vero aspernatur ut corporis doloribus eum obcaecati natus delectus nesciunt eveniet enim, sit adipisci autem nulla modi! Minus, doloribus!
+            Repellat error reiciendis quos vero illo praesentium quo, consectetur ut possimus nisi optio, necessitatibus iure tempora qui impedit ipsam laboriosam. Accusantium repellat provident aliquam sequi deleniti, nihil quidem cupiditate modi!</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quo sed, officia soluta deserunt doloribus non accusamus repudiandae ipsa veniam reiciendis quasi odio facere quae assumenda necessitatibus impedit odit ex.
+            Praesentium velit quo cumque error deleniti aliquid quibusdam amet harum dolorem officiis. Deserunt dolor animi perspiciatis expedita nulla ipsam, id quo? Quia qui tenetur earum? Incidunt, atque. Repellendus, quis ratione?
+            In fugit ratione itaque iure fugiat temporibus quas nisi, magnam excepturi nulla libero dolorem rem obcaecati optio autem? Delectus magnam quidem dolores illo ab, in facilis itaque. Aut, totam. Voluptatem!</p>
+            
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab voluptate animi aut repudiandae. Sit architecto quia, explicabo, praesentium alias tempore soluta quaerat quidem dolor nostrum magni, ut harum fugit modi.
+            Tempore numquam deserunt officia architecto, aliquid inventore omnis quod recusandae similique alias fugiat rerum mollitia adipisci neque minima debitis enim repellat quasi pariatur eaque officiis ipsam. Velit saepe distinctio minus?</p>
+
+        </article>
+    </main>
+
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+
+</body>
+</html>
